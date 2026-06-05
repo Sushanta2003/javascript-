@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num = [];
+    for ( let i = 0; i<10 ; i++)
+    {
+        let n = parseInt(prompt("Enter number" + (i+1)+ ":"));
+        num.push(n);
+    }
+    for(i=0; i<num.length ; i++)
+    {
+        for (let j = i+1; j>num.length ; j++)
+    {
+        if (num[i]>num[j])
+        {
+            let temp = num[i];
+            num [i] = num[j];
+            num[j] = temp;
+        }
+    }
+    }
+    for(let i=0; i<num.length ;i++)
+    {
+        document.write(num[i] + "<br>");
+    }
+    </script>
+</body> 
+</html>

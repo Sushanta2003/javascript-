@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First number:
+    <input type="text" id="first"><br><br>
+
+    Second number:
+    <input type="text" id="second" onblur="calculate()">
+
+    <script>
+        
+        function calculate()
+        {
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let sum = a+b;
+            alert("sum is :"+ sum);
+        }
+    </script>
+</body>
+</html>

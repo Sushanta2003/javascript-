@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="jersey front view.jpg" alt="" style="height: 400px; width: 300px;" id="demo" onmouseover="zoomIn()" onmouseout="zoomOut()">
+<script>
+    function zoomIn()
+    {
+        let photo = document.getElementById("demo");
+        photo.style.height = "800px";
+        photo.style.width = "800px";  
+    }
+      function zoomOut()
+    {
+        let photo = document.getElementById("demo");
+        photo.style.height = "400px";
+        photo.style.width = "300px";  
+    }
+</script>
+ </body>
+</html>

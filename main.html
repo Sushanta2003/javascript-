@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="jersey front view.jpg" alt="" style="height: 400px; width: 300px;" id="demo" onmouseover="change()" ondblclick="unchange()">
+<!-- <button onclick="change()">back view</button>
+<button onclick="unchange()">front view</button> -->
+
+
+<script>
+    function change(){
+        document.getElementById("demo").src="back view.jpg";
+    }
+    function unchange()
+    {
+        document.getElementById("demo").src="jersey front view.jpg";
+    }
+</script> 
+</body>
+</html>
