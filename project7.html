@@ -1,0 +1,23 @@
+<!-- create a text box when we typed something display that text when user clickes on outside of the textbox use on blur
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>onblur Example</title>
+</head>
+<body>
+
+<input type="text" id="txt" onblur="displayText()">
+<p id="result"></p>
+
+<script>
+    function displayText() {
+        let text = document.getElementById("txt").value;
+        document.getElementById("result").innerHTML = text;
+    }
+</script>
+
+</body>
+</html>

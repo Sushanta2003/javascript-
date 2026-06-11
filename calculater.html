@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First:
+    <input type="text" name="" id="first"><br>
+    Second:
+    <input type="text" name="" id="second"><br>
+    <button onclick="add()">add</button>
+    <button onclick="div()">divide</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <p id="demo"></p>
+    <script>
+     function add(){
+    let a = parseInt(document.getElementById("first").value);
+    let b = parseInt(document.getElementById("second").value);
+    sum = a + b;
+
+    document.getElementById("demo").innerHTML="sum is:" + sum;
+     }
+       function div(){
+    let a = parseInt(document.getElementById("first").value);
+    let b = parseInt(document.getElementById("second").value);
+    div = a / b;
+
+    document.getElementById("demo").innerHTML="answer is:" + div;
+    }
+    function sub(){
+        let a = parseInt(document.getElementById("first").value);
+        let b = parseInt(document.getElementById("second").value);
+        sub = a-b;
+        document.getElementById("demo").innerHTML="answer is:" + sub;
+    }
+
+    function mul(){
+        let a = parseInt(document.getElementById("first").value);
+        let b = parseInt(document.getElementById("second").value);
+        mul = a*b;
+        document.getElementById("demo").innerHTML="answer is:" + mul;
+    }
+    </script>
+   
+</body>
+</html>
